@@ -91,3 +91,43 @@
     line-height: 19px;
   }
 }
+
+// Header aside
+
+.header__aside {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 3;
+  border-right: 1px solid rgba($color: #fff, $alpha: 0.25);
+  height: 100vh;
+  text-align: center;
+  color: #fff;
+}
+.header__title {
+  font-size: 200px;
+  font-weight: 800;
+  line-height: 156px; /* 78% */
+  text-transform: uppercase;
+  opacity: 0.0654;
+  max-width: 467px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 3;
+}
+
+.menu {
+  a {
+    color: #fff;
+    span {
+      display: block;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 14px;
+      letter-spacing: 3px;
+      padding-top: 6px;
+      margin-bottom: 37px;
+    }
+  }
+}
