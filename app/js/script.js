@@ -21,6 +21,12 @@ $(function () {
       '<img class="slider-arrows slider-arrows__left" src="./app/images/icons/arrow-left.svg" alt="arrow" />',
     nextArrow:
       '<img class="slider-arrows slider-arrows__right" src="./app/images/icons/arrow-right.svg" alt="arrow" />',
-    // asNavFor: ".slider-dots",
+    asNavFor: ".surf-map",
+  });
+  $(".surf-map").slick({
+    slidesToShow: 8,
+    slidesToScroll: 1,
+    asNavFor: ".surf-slider",
+    focusOnSelect: true,
   });
 });
