@@ -55,9 +55,44 @@ li {
   }
 }
 
+.headline-right {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 32px; /* 145.455% */
+  letter-spacing: 7.333px;
+  text-transform: uppercase;
+  opacity: 0.5012;
+  position: relative;
+  padding-right: 103px;
+  display: inline-block;
+  &::before {
+    content: "";
+    width: 80px;
+    height: 1px;
+    position: absolute;
+    background-color: #fff;
+    opacity: 0.5;
+    top: 50%;
+    right: 0;
+  }
+}
+
 .subtitle {
   display: inline-block;
   text-align: right;
+  text-transform: uppercase;
+  &__head {
+    font-size: 40px;
+    font-weight: 800;
+    span {
+      font-weight: 100;
+    }
+  }
+}
+
+.descr {
+  display: inline-block;
   text-transform: uppercase;
   &__head {
     font-size: 40px;
@@ -145,4 +180,13 @@ li {
       transform: translateY(-50%);
     }
   }
+}
+
+.surf,
+.travel {
+  padding: 160px 0 120px;
+}
+
+.travel {
+  padding-bottom: 265px;
 }

@@ -29,4 +29,14 @@ $(function () {
     asNavFor: ".surf-slider",
     focusOnSelect: true,
   });
+
+  $(".travel__slider").slick({
+    infinite: true,
+    fade: true,
+    prevArrow:
+      '<img class="slider-arrows slider-arrows__left" src="./app/images/icons/arrow-left.svg" alt="arrow" />',
+    nextArrow:
+      '<img class="slider-arrows slider-arrows__right" src="./app/images/icons/arrow-right.svg" alt="arrow" />',
+    asNavFor: ".surf-map",
+  });
 });
