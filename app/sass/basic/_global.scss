@@ -182,6 +182,15 @@ li {
   }
 }
 
+.footer {
+  .btn span:after {
+    background-image: none;
+  }
+  .btn span {
+    padding-right: 17px;
+  }
+}
+
 .surf,
 .travel,
 .sleep,

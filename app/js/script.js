@@ -50,6 +50,16 @@ $(function () {
     // asNavFor: ".surf-map",
   });
 
+  $(".shop__slider").slick({
+    infinite: true,
+    fade: true,
+    prevArrow:
+      '<img class="slider-arrows slider-arrows__left" src="./app/images/icons/arrow-left.svg" alt="arrow" />',
+    nextArrow:
+      '<img class="slider-arrows slider-arrows__right" src="./app/images/icons/arrow-right.svg" alt="arrow" />',
+    // asNavFor: ".surf-map",
+  });
+
   jQuery(
     '<div class="quantity-nav"><div class="quantity-button quantity-up"> <img src="app/images/icons/plus.svg" alt="" /> </div><div class="quantity-button quantity-down"><img src="app/images/icons/minus.svg" alt="" /></div></div>'
   ).insertAfter(".quantity input");
@@ -100,4 +110,10 @@ $(function () {
     $(".summ").data("guests");
 
   $(".summ").html("$" + summ);
+
+  // shop section circle
+
+  $(".surfboard-box__circle").on("click", function () {
+    $(this).toggleClass("active");
+  });
 });

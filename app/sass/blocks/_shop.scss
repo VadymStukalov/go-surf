@@ -15,6 +15,15 @@
 }
 
 .shop {
+  .slick-slide img {
+    display: inline-block;
+  }
+  .slick-track {
+    max-height: 798px;
+  }
+  .slider-arrows {
+    opacity: 0.25;
+  }
 }
 .title {
 }
@@ -44,10 +53,11 @@
   }
 }
 .shop__slider-rate {
-  margin-left: -15px;
+  margin-left: -8px;
   margin-bottom: -10px;
   img {
     margin-right: -15px;
+    display: inline-block;
   }
 }
 .shop__slider-btn {
@@ -60,7 +70,95 @@
   padding-left: 150px;
 }
 .surfboard {
+  position: relative;
 }
+.surfboard-box {
+  position: absolute;
+}
+
+.surfboard-box__position--1 {
+  top: 205px;
+  right: 36px;
+}
+.surfboard-box__position--2 {
+  top: 290px;
+  right: 213px;
+}
+.surfboard-box__position--3 {
+  top: 608px;
+  right: 155px;
+  .surfboard-box__content {
+    position: absolute;
+    padding-left: 0;
+    padding-right: 105px;
+    left: -392px;
+    top: -15px;
+    &::before {
+      content: "";
+      width: 80px;
+      height: 1px;
+      background-color: #fff;
+      opacity: 0.5;
+      position: absolute;
+      top: 50%;
+      left: auto;
+      right: 0;
+    }
+  }
+}
+.surfboard-box__circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: relative;
+  cursor: pointer;
+  &.active {
+    .circle-row {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    & + .surfboard-box__content {
+      display: block;
+    }
+  }
+}
+
+.surfboard-box__content {
+  position: absolute;
+  width: 360px;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding-left: 105px;
+  top: -14px;
+  left: 28px;
+  display: none;
+  &::before {
+    content: "";
+    width: 80px;
+    height: 1px;
+    background-color: #fff;
+    opacity: 0.5;
+    position: absolute;
+    top: 50%;
+    left: 0;
+  }
+}
+.circle-row {
+  background-color: $green;
+  width: 12px;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  & + .circle-row {
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+}
+
 .shop__extras {
   padding-left: 167px;
 }
