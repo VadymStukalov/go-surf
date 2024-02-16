@@ -495,7 +495,8 @@ li {
 
 .surf,
 .travel,
-.sleep {
+.sleep,
+.shop {
   padding: 160px 0 120px;
 }
 
@@ -1046,7 +1047,7 @@ li {
 }
 
 .sleep {
-  background-image: url(../app/images/img/sleep-cocktail-bg.png);
+  background-image: url(../app/images/img/frangipani-xl.png);
   background-repeat: no-repeat;
   background-position: right bottom;
 }
@@ -1082,6 +1083,10 @@ li {
 .sleep-slider__info {
   display: flex;
   justify-content: space-around;
+  background-repeat: no-repeat;
+  background-position: right -84px;
+  padding-top: 228px;
+  margin-top: -150px;
 }
 
 .sleep-slider__item-subtitle {
@@ -1101,14 +1106,17 @@ li {
   white-space: nowrap;
 }
 
+.sleep-slider__info {
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
 .sleep-slider__item-title {
   font-size: 40px;
   line-height: 36px;
   text-transform: uppercase;
   font-weight: 800;
   padding-left: 40px;
-  display: flex;
-  flex-direction: column;
 }
 .sleep-slider__item-title span {
   font-size: 14px;
@@ -1117,6 +1125,15 @@ li {
   letter-spacing: 5.25px;
   align-self: end;
   padding-right: 5px;
+}
+
+.sleep-slider__item-title .prn {
+  display: block;
+  text-align: right;
+}
+
+.usd {
+  display: inline-block;
 }
 
 .sleep-slider__info-item {
@@ -1137,8 +1154,18 @@ li {
   display: flex;
 }
 
+.summ {
+  display: block;
+}
+.summ span {
+  font-size: 40px;
+  line-height: 36px;
+  letter-spacing: normal;
+  opacity: 1;
+}
+
 .quantity {
-  display: inline;
+  display: inline-block;
 }
 
 input[type=number]::-webkit-inner-spin-button,
@@ -1152,15 +1179,14 @@ input[type=number] {
 }
 
 .quantity input {
-  width: 45px;
-  height: 42px;
-  line-height: 1.65;
-  float: left;
-  display: block;
-  padding: 0;
-  margin: 0;
-  padding-left: 20px;
-  border: 1px solid #eee;
+  width: 40px;
+  font-size: 40px;
+  line-height: 36px;
+  text-transform: uppercase;
+  font-weight: 800;
+  border: none;
+  background: transparent;
+  color: #fff;
 }
 
 .quantity input:focus {
@@ -1169,21 +1195,19 @@ input[type=number] {
 
 .quantity-nav {
   float: left;
-  position: relative;
+  position: static;
   height: 42px;
 }
 
 .quantity-button {
   position: relative;
   cursor: pointer;
-  border-left: 1px solid #eee;
   width: 20px;
-  text-align: center;
-  color: #333;
-  font-size: 13px;
-  font-family: "Trebuchet MS", Helvetica, sans-serif !important;
-  line-height: 1.7;
-  transform: translateX(-100%);
+  height: 20px;
+  color: #4af6cd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
@@ -1191,17 +1215,107 @@ input[type=number] {
 
 .quantity-button.quantity-up {
   position: absolute;
-  height: 50%;
-  top: 0;
-  border-bottom: 1px solid #eee;
+  top: 50px;
+  right: 0;
 }
 
 .quantity-button.quantity-down {
   position: absolute;
-  bottom: -1px;
-  height: 50%;
+  top: 50px;
+  right: 25px;
 }
 
 .summ {
   display: inline-block;
+}
+
+.shop {
+  background-image: url(../app/images/img/shop-bg.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.shop__slider-info {
+  padding-top: 166px;
+  max-width: 480px;
+  margin-right: 40px;
+}
+.shop__slider-info .descr__head {
+  max-width: 350px;
+  margin-bottom: 47px;
+}
+
+.shop__slider {
+  padding-left: 132px;
+}
+
+.shop__slider-inner {
+  display: flex;
+}
+
+.shop__slider-price {
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 67px;
+}
+.shop__slider-price sup {
+  font-size: 18px;
+  padding-left: 2px;
+}
+
+.shop__slider-rate {
+  margin-left: -15px;
+  margin-bottom: -10px;
+}
+.shop__slider-rate img {
+  margin-right: -15px;
+}
+
+.shop__slider-content {
+  display: flex;
+  align-items: flex-end;
+  padding-left: 150px;
+}
+
+.shop__extras {
+  padding-left: 167px;
+}
+
+.shop__extras-title {
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: 800;
+  margin-bottom: 25px;
+}
+
+.shop__extras-inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.shop__extras-box {
+  text-align: center;
+  margin-right: 57px;
+}
+
+.shop__extras-img {
+  min-height: 105px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 35px;
+}
+
+.shop__extras-name {
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 8px;
+  opacity: 0.5;
+  text-transform: uppercase;
+}
+
+.shop__extras-price {
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: 800;
 }/*# sourceMappingURL=main.css.map */

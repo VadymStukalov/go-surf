@@ -1061,8 +1061,8 @@
             <h3>sleep</h3>
           </span>
         </div>
-        <div class="travel__slider">
-          <div class="travel__slider-item sleep-slider">
+        <div class="sleep__slider">
+          <div class="sleep__slider-item sleep-slider">
             <div
               class="sleep-slider__head"
               style="background-image: url(./app/images/img/sleep-bg.png)"
@@ -1093,7 +1093,10 @@
                 </div>
               </div>
             </div>
-            <div class="sleep-slider__info">
+            <div
+              class="sleep-slider__info"
+              style="background-image: url(./app/images/img/frangipani-sm.png)"
+            >
               <div class="sleep-slider__info-item">
                 <div class="sleep-slider__item-subtitle">Resort</div>
                 <div class="sleep-slider__item-title">
@@ -1105,7 +1108,14 @@
                 <div class="sleep-slider__item-subtitle"># of Nights</div>
                 <div class="sleep-slider__item-title">
                   <div class="quantity">
-                    <input type="number" min="1" max="9" step="1" value="5" />
+                    <input
+                      class="nights"
+                      type="number"
+                      min="1"
+                      max="9"
+                      step="1"
+                      value="5"
+                    />
                   </div>
                   Nights
                 </div>
@@ -1114,7 +1124,14 @@
                 <div class="sleep-slider__item-subtitle"># of Guests</div>
                 <div class="sleep-slider__item-title">
                   <div class="quantity">
-                    <input type="number" min="1" max="9" step="1" value="4" />
+                    <input
+                      class="guests"
+                      type="number"
+                      min="1"
+                      max="9"
+                      step="1"
+                      value="4"
+                    />
                   </div>
                   Guests
                 </div>
@@ -1122,8 +1139,634 @@
               <div class="sleep-slider__info-item">
                 <div class="sleep-slider__item-subtitle">Pricing</div>
                 <div class="sleep-slider__item-title">
-                  <div class="summ">$349</div>
-                  USD <span>Per Night</span>
+                  <div class="summ" data-nights="55" data-guests="25">
+                    <span class="usd">USD</span>
+                  </div>
+                  <span class="prn">Per Night</span>
+                </div>
+              </div>
+            </div>
+            <div class="sleep-slider__btn">
+              <a href="#" class="btn">book <span>Stay</span></a>
+            </div>
+          </div>
+          <!-- slider 2 -->
+          <div class="sleep__slider-item sleep-slider">
+            <div
+              class="sleep-slider__head"
+              style="background-image: url(./app/images/img/sleep-bg.png)"
+            >
+              <div class="sleep-slider__subtitle">
+                <div class="subtitle">
+                  <div class="headline-left">Resorts</div>
+                  <div class="subtitle__head">
+                    Auberge <span>|</span> Australia
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="sleep-slider__descr"
+              style="background-image: url(./app/images/img/hammock.png)"
+            >
+              <div class="descr">
+                <div class="headline-right">Rating</div>
+                <div class="descr__head">
+                  Excellent
+                  <img src="app/images/icons/star.svg" alt="" />
+                  <img src="app/images/icons/star.svg" alt="" />
+                  <img src="app/images/icons/star.svg" alt="" />
+                  <img src="app/images/icons/star.svg" alt="" />
+                  <img src="app/images/icons/star.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div
+              class="sleep-slider__info"
+              style="background-image: url(./app/images/img/frangipani-sm.png)"
+            >
+              <div class="sleep-slider__info-item">
+                <div class="sleep-slider__item-subtitle">Resort</div>
+                <div class="sleep-slider__item-title">
+                  Auberge <br />
+                  Australia
+                </div>
+              </div>
+              <div class="sleep-slider__info-item">
+                <div class="sleep-slider__item-subtitle"># of Nights</div>
+                <div class="sleep-slider__item-title">
+                  <div class="quantity">
+                    <input
+                      class="nights"
+                      type="number"
+                      min="1"
+                      max="9"
+                      step="1"
+                      value="5"
+                    />
+                  </div>
+                  Nights
+                </div>
+              </div>
+              <div class="sleep-slider__info-item">
+                <div class="sleep-slider__item-subtitle"># of Guests</div>
+                <div class="sleep-slider__item-title">
+                  <div class="quantity">
+                    <input
+                      class="guests"
+                      type="number"
+                      min="1"
+                      max="9"
+                      step="1"
+                      value="4"
+                    />
+                  </div>
+                  Guests
+                </div>
+              </div>
+              <div class="sleep-slider__info-item">
+                <div class="sleep-slider__item-subtitle">Pricing</div>
+                <div class="sleep-slider__item-title">
+                  <div class="summ" data-nights="55" data-guests="25">
+                    <span class="usd">USD</span>
+                  </div>
+                  <span class="prn">Per Night</span>
+                </div>
+              </div>
+            </div>
+            <div class="sleep-slider__btn">
+              <a href="#" class="btn">book <span>Stay</span></a>
+            </div>
+          </div>
+
+          <!-- slider 3 -->
+          <div class="sleep__slider-item sleep-slider">
+            <div
+              class="sleep-slider__head"
+              style="background-image: url(./app/images/img/sleep-bg.png)"
+            >
+              <div class="sleep-slider__subtitle">
+                <div class="subtitle">
+                  <div class="headline-left">Resorts</div>
+                  <div class="subtitle__head">
+                    Auberge <span>|</span> Australia
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="sleep-slider__descr"
+              style="background-image: url(./app/images/img/hammock.png)"
+            >
+              <div class="descr">
+                <div class="headline-right">Rating</div>
+                <div class="descr__head">
+                  Excellent
+                  <img src="app/images/icons/star.svg" alt="" />
+                  <img src="app/images/icons/star.svg" alt="" />
+                  <img src="app/images/icons/star.svg" alt="" />
+                  <img src="app/images/icons/star.svg" alt="" />
+                  <img src="app/images/icons/star.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div
+              class="sleep-slider__info"
+              style="background-image: url(./app/images/img/frangipani-sm.png)"
+            >
+              <div class="sleep-slider__info-item">
+                <div class="sleep-slider__item-subtitle">Resort</div>
+                <div class="sleep-slider__item-title">
+                  Auberge <br />
+                  Australia
+                </div>
+              </div>
+              <div class="sleep-slider__info-item">
+                <div class="sleep-slider__item-subtitle"># of Nights</div>
+                <div class="sleep-slider__item-title">
+                  <div class="quantity">
+                    <input
+                      class="nights"
+                      type="number"
+                      min="1"
+                      max="9"
+                      step="1"
+                      value="5"
+                    />
+                  </div>
+                  Nights
+                </div>
+              </div>
+              <div class="sleep-slider__info-item">
+                <div class="sleep-slider__item-subtitle"># of Guests</div>
+                <div class="sleep-slider__item-title">
+                  <div class="quantity">
+                    <input
+                      class="guests"
+                      type="number"
+                      min="1"
+                      max="9"
+                      step="1"
+                      value="4"
+                    />
+                  </div>
+                  Guests
+                </div>
+              </div>
+              <div class="sleep-slider__info-item">
+                <div class="sleep-slider__item-subtitle">Pricing</div>
+                <div class="sleep-slider__item-title">
+                  <div class="summ" data-nights="55" data-guests="25">
+                    <span class="usd">USD</span>
+                  </div>
+                  <span class="prn">Per Night</span>
+                </div>
+              </div>
+            </div>
+            <div class="sleep-slider__btn">
+              <a href="#" class="btn">book <span>Stay</span></a>
+            </div>
+          </div>
+          <!-- slider 4 -->
+          <div class="sleep__slider-item sleep-slider">
+            <div
+              class="sleep-slider__head"
+              style="background-image: url(./app/images/img/sleep-bg.png)"
+            >
+              <div class="sleep-slider__subtitle">
+                <div class="subtitle">
+                  <div class="headline-left">Resorts</div>
+                  <div class="subtitle__head">
+                    Auberge <span>|</span> Australia
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="sleep-slider__descr"
+              style="background-image: url(./app/images/img/hammock.png)"
+            >
+              <div class="descr">
+                <div class="headline-right">Rating</div>
+                <div class="descr__head">
+                  Excellent
+                  <img src="app/images/icons/star.svg" alt="" />
+                  <img src="app/images/icons/star.svg" alt="" />
+                  <img src="app/images/icons/star.svg" alt="" />
+                  <img src="app/images/icons/star.svg" alt="" />
+                  <img src="app/images/icons/star.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div
+              class="sleep-slider__info"
+              style="background-image: url(./app/images/img/frangipani-sm.png)"
+            >
+              <div class="sleep-slider__info-item">
+                <div class="sleep-slider__item-subtitle">Resort</div>
+                <div class="sleep-slider__item-title">
+                  Auberge <br />
+                  Australia
+                </div>
+              </div>
+              <div class="sleep-slider__info-item">
+                <div class="sleep-slider__item-subtitle"># of Nights</div>
+                <div class="sleep-slider__item-title">
+                  <div class="quantity">
+                    <input
+                      class="nights"
+                      type="number"
+                      min="1"
+                      max="9"
+                      step="1"
+                      value="5"
+                    />
+                  </div>
+                  Nights
+                </div>
+              </div>
+              <div class="sleep-slider__info-item">
+                <div class="sleep-slider__item-subtitle"># of Guests</div>
+                <div class="sleep-slider__item-title">
+                  <div class="quantity">
+                    <input
+                      class="guests"
+                      type="number"
+                      min="1"
+                      max="9"
+                      step="1"
+                      value="4"
+                    />
+                  </div>
+                  Guests
+                </div>
+              </div>
+              <div class="sleep-slider__info-item">
+                <div class="sleep-slider__item-subtitle">Pricing</div>
+                <div class="sleep-slider__item-title">
+                  <div class="summ" data-nights="55" data-guests="25">
+                    <span class="usd">USD</span>
+                  </div>
+                  <span class="prn">Per Night</span>
+                </div>
+              </div>
+            </div>
+            <div class="sleep-slider__btn">
+              <a href="#" class="btn">book <span>Stay</span></a>
+            </div>
+          </div>
+          <!-- slider 5 -->
+          <div class="sleep__slider-item sleep-slider">
+            <div
+              class="sleep-slider__head"
+              style="background-image: url(./app/images/img/sleep-bg.png)"
+            >
+              <div class="sleep-slider__subtitle">
+                <div class="subtitle">
+                  <div class="headline-left">Resorts</div>
+                  <div class="subtitle__head">
+                    Auberge <span>|</span> Australia
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="sleep-slider__descr"
+              style="background-image: url(./app/images/img/hammock.png)"
+            >
+              <div class="descr">
+                <div class="headline-right">Rating</div>
+                <div class="descr__head">
+                  Excellent
+                  <img src="app/images/icons/star.svg" alt="" />
+                  <img src="app/images/icons/star.svg" alt="" />
+                  <img src="app/images/icons/star.svg" alt="" />
+                  <img src="app/images/icons/star.svg" alt="" />
+                  <img src="app/images/icons/star.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div
+              class="sleep-slider__info"
+              style="background-image: url(./app/images/img/frangipani-sm.png)"
+            >
+              <div class="sleep-slider__info-item">
+                <div class="sleep-slider__item-subtitle">Resort</div>
+                <div class="sleep-slider__item-title">
+                  Auberge <br />
+                  Australia
+                </div>
+              </div>
+              <div class="sleep-slider__info-item">
+                <div class="sleep-slider__item-subtitle"># of Nights</div>
+                <div class="sleep-slider__item-title">
+                  <div class="quantity">
+                    <input
+                      class="nights"
+                      type="number"
+                      min="1"
+                      max="9"
+                      step="1"
+                      value="5"
+                    />
+                  </div>
+                  Nights
+                </div>
+              </div>
+              <div class="sleep-slider__info-item">
+                <div class="sleep-slider__item-subtitle"># of Guests</div>
+                <div class="sleep-slider__item-title">
+                  <div class="quantity">
+                    <input
+                      class="guests"
+                      type="number"
+                      min="1"
+                      max="9"
+                      step="1"
+                      value="4"
+                    />
+                  </div>
+                  Guests
+                </div>
+              </div>
+              <div class="sleep-slider__info-item">
+                <div class="sleep-slider__item-subtitle">Pricing</div>
+                <div class="sleep-slider__item-title">
+                  <div class="summ" data-nights="55" data-guests="25">
+                    <span class="usd">USD</span>
+                  </div>
+                  <span class="prn">Per Night</span>
+                </div>
+              </div>
+            </div>
+            <div class="sleep-slider__btn">
+              <a href="#" class="btn">book <span>Stay</span></a>
+            </div>
+          </div>
+          <!-- slider 6 -->
+          <div class="sleep__slider-item sleep-slider">
+            <div
+              class="sleep-slider__head"
+              style="background-image: url(./app/images/img/sleep-bg.png)"
+            >
+              <div class="sleep-slider__subtitle">
+                <div class="subtitle">
+                  <div class="headline-left">Resorts</div>
+                  <div class="subtitle__head">
+                    Auberge <span>|</span> Australia
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="sleep-slider__descr"
+              style="background-image: url(./app/images/img/hammock.png)"
+            >
+              <div class="descr">
+                <div class="headline-right">Rating</div>
+                <div class="descr__head">
+                  Excellent
+                  <img src="app/images/icons/star.svg" alt="" />
+                  <img src="app/images/icons/star.svg" alt="" />
+                  <img src="app/images/icons/star.svg" alt="" />
+                  <img src="app/images/icons/star.svg" alt="" />
+                  <img src="app/images/icons/star.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div
+              class="sleep-slider__info"
+              style="background-image: url(./app/images/img/frangipani-sm.png)"
+            >
+              <div class="sleep-slider__info-item">
+                <div class="sleep-slider__item-subtitle">Resort</div>
+                <div class="sleep-slider__item-title">
+                  Auberge <br />
+                  Australia
+                </div>
+              </div>
+              <div class="sleep-slider__info-item">
+                <div class="sleep-slider__item-subtitle"># of Nights</div>
+                <div class="sleep-slider__item-title">
+                  <div class="quantity">
+                    <input
+                      class="nights"
+                      type="number"
+                      min="1"
+                      max="9"
+                      step="1"
+                      value="5"
+                    />
+                  </div>
+                  Nights
+                </div>
+              </div>
+              <div class="sleep-slider__info-item">
+                <div class="sleep-slider__item-subtitle"># of Guests</div>
+                <div class="sleep-slider__item-title">
+                  <div class="quantity">
+                    <input
+                      class="guests"
+                      type="number"
+                      min="1"
+                      max="9"
+                      step="1"
+                      value="4"
+                    />
+                  </div>
+                  Guests
+                </div>
+              </div>
+              <div class="sleep-slider__info-item">
+                <div class="sleep-slider__item-subtitle">Pricing</div>
+                <div class="sleep-slider__item-title">
+                  <div class="summ" data-nights="55" data-guests="25">
+                    <span class="usd">USD</span>
+                  </div>
+                  <span class="prn">Per Night</span>
+                </div>
+              </div>
+            </div>
+            <div class="sleep-slider__btn">
+              <a href="#" class="btn">book <span>Stay</span></a>
+            </div>
+          </div>
+          <!-- slider 7 -->
+          <div class="sleep__slider-item sleep-slider">
+            <div
+              class="sleep-slider__head"
+              style="background-image: url(./app/images/img/sleep-bg.png)"
+            >
+              <div class="sleep-slider__subtitle">
+                <div class="subtitle">
+                  <div class="headline-left">Resorts</div>
+                  <div class="subtitle__head">
+                    Auberge <span>|</span> Australia
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="sleep-slider__descr"
+              style="background-image: url(./app/images/img/hammock.png)"
+            >
+              <div class="descr">
+                <div class="headline-right">Rating</div>
+                <div class="descr__head">
+                  Excellent
+                  <img src="app/images/icons/star.svg" alt="" />
+                  <img src="app/images/icons/star.svg" alt="" />
+                  <img src="app/images/icons/star.svg" alt="" />
+                  <img src="app/images/icons/star.svg" alt="" />
+                  <img src="app/images/icons/star.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div
+              class="sleep-slider__info"
+              style="background-image: url(./app/images/img/frangipani-sm.png)"
+            >
+              <div class="sleep-slider__info-item">
+                <div class="sleep-slider__item-subtitle">Resort</div>
+                <div class="sleep-slider__item-title">
+                  Auberge <br />
+                  Australia
+                </div>
+              </div>
+              <div class="sleep-slider__info-item">
+                <div class="sleep-slider__item-subtitle"># of Nights</div>
+                <div class="sleep-slider__item-title">
+                  <div class="quantity">
+                    <input
+                      class="nights"
+                      type="number"
+                      min="1"
+                      max="9"
+                      step="1"
+                      value="5"
+                    />
+                  </div>
+                  Nights
+                </div>
+              </div>
+              <div class="sleep-slider__info-item">
+                <div class="sleep-slider__item-subtitle"># of Guests</div>
+                <div class="sleep-slider__item-title">
+                  <div class="quantity">
+                    <input
+                      class="guests"
+                      type="number"
+                      min="1"
+                      max="9"
+                      step="1"
+                      value="4"
+                    />
+                  </div>
+                  Guests
+                </div>
+              </div>
+              <div class="sleep-slider__info-item">
+                <div class="sleep-slider__item-subtitle">Pricing</div>
+                <div class="sleep-slider__item-title">
+                  <div class="summ" data-nights="55" data-guests="25">
+                    <span class="usd">USD</span>
+                  </div>
+                  <span class="prn">Per Night</span>
+                </div>
+              </div>
+            </div>
+            <div class="sleep-slider__btn">
+              <a href="#" class="btn">book <span>Stay</span></a>
+            </div>
+          </div>
+          <!-- slider 8 -->
+          <div class="sleep__slider-item sleep-slider">
+            <div
+              class="sleep-slider__head"
+              style="background-image: url(./app/images/img/sleep-bg.png)"
+            >
+              <div class="sleep-slider__subtitle">
+                <div class="subtitle">
+                  <div class="headline-left">Resorts</div>
+                  <div class="subtitle__head">
+                    Auberge <span>|</span> Australia
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="sleep-slider__descr"
+              style="background-image: url(./app/images/img/hammock.png)"
+            >
+              <div class="descr">
+                <div class="headline-right">Rating</div>
+                <div class="descr__head">
+                  Excellent
+                  <img src="app/images/icons/star.svg" alt="" />
+                  <img src="app/images/icons/star.svg" alt="" />
+                  <img src="app/images/icons/star.svg" alt="" />
+                  <img src="app/images/icons/star.svg" alt="" />
+                  <img src="app/images/icons/star.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div
+              class="sleep-slider__info"
+              style="background-image: url(./app/images/img/frangipani-sm.png)"
+            >
+              <div class="sleep-slider__info-item">
+                <div class="sleep-slider__item-subtitle">Resort</div>
+                <div class="sleep-slider__item-title">
+                  Auberge <br />
+                  Australia
+                </div>
+              </div>
+              <div class="sleep-slider__info-item">
+                <div class="sleep-slider__item-subtitle"># of Nights</div>
+                <div class="sleep-slider__item-title">
+                  <div class="quantity">
+                    <input
+                      class="nights"
+                      type="number"
+                      min="1"
+                      max="9"
+                      step="1"
+                      value="5"
+                    />
+                  </div>
+                  Nights
+                </div>
+              </div>
+              <div class="sleep-slider__info-item">
+                <div class="sleep-slider__item-subtitle"># of Guests</div>
+                <div class="sleep-slider__item-title">
+                  <div class="quantity">
+                    <input
+                      class="guests"
+                      type="number"
+                      min="1"
+                      max="9"
+                      step="1"
+                      value="4"
+                    />
+                  </div>
+                  Guests
+                </div>
+              </div>
+              <div class="sleep-slider__info-item">
+                <div class="sleep-slider__item-subtitle">Pricing</div>
+                <div class="sleep-slider__item-title">
+                  <div class="summ" data-nights="55" data-guests="25">
+                    <span class="usd">USD</span>
+                  </div>
+                  <span class="prn">Per Night</span>
                 </div>
               </div>
             </div>
@@ -1139,6 +1782,55 @@
             shop
             <h3>shop</h3>
           </span>
+        </div>
+        <div class="shop__slider">
+          <div class="shop__slider-item">
+            <div class="shop__slider-inner">
+              <div class="shop__slider-info">
+                <div class="descr">
+                  <div class="headline-right">Style</div>
+                  <div class="descr__head">North Nugget TT Surfboard</div>
+                </div>
+                <div class="shop__slider-price">
+                  <div class="shop__slider-rate">
+                    <img src="app/images/icons/star.svg" alt="" />
+                    <img src="app/images/icons/star.svg" alt="" />
+                    <img src="app/images/icons/star.svg" alt="" />
+                    <img src="app/images/icons/star.svg" alt="" />
+                    <img src="app/images/icons/star.svg" alt="" />
+                  </div>
+                  $799 <sup>99</sup>
+                </div>
+                <div class="shop__slider-btn">
+                  <a href="#" class="btn">drop <span>in</span></a>
+                </div>
+              </div>
+              <div class="shop__slider-content">
+                <div class="surfboard">
+                  <img src="./app/images/img/surfboard.png" alt="" />
+                </div>
+                <div class="shop__extras">
+                  <div class="shop__extras-title">EXTRAS</div>
+                  <div class="shop__extras-inner">
+                    <div class="shop__extras-box">
+                      <div class="shop__extras-img">
+                        <img src="./app/images/img/wax.png" alt="" />
+                      </div>
+                      <div class="shop__extras-name">Sex Wax</div>
+                      <div class="shop__extras-price">$24.99</div>
+                    </div>
+                    <div class="shop__extras-box">
+                      <div class="shop__extras-img">
+                        <img src="./app/images/img/bracelet.png" alt="" />
+                      </div>
+                      <div class="shop__extras-name">Pura Vidax</div>
+                      <div class="shop__extras-price">$27.99</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </div>
