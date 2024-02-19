@@ -9,7 +9,7 @@
   max-width: 480px;
   margin-right: 40px;
   .descr__head {
-    max-width: 350px;
+    width: 350px;
     margin-bottom: 47px;
   }
 }
@@ -67,7 +67,7 @@
 .shop__slider-content {
   display: flex;
   align-items: flex-end;
-  padding-left: 150px;
+  padding-left: 100px;
 }
 .surfboard {
   position: relative;
