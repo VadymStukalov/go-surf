@@ -1,0 +1,24 @@
+.menu-btn {
+  display: none;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  z-index: 5;
+  right: 20px;
+  top: 75px;
+  &__inner {
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 40px;
+  }
+  &__line {
+    height: 5px;
+    background-color: $green;
+    + .menu-btn__line {
+      margin-top: 5px;
+    }
+  }
+}

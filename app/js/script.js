@@ -12,6 +12,12 @@ $(function () {
     slidesToShow: 4,
     slidesToScroll: 4,
     asNavFor: ".header__slider",
+    responsive: [
+      {
+        breakpoint: 961,
+        settings: "unslick",
+      },
+    ],
   });
 
   $(".surf-slider").slick({
@@ -22,12 +28,64 @@ $(function () {
     nextArrow:
       '<img class="slider-arrows slider-arrows__right" src="./app/images/icons/arrow-right.svg" alt="arrow" />',
     asNavFor: ".surf-map",
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      // {
+      //   breakpoint: 600,
+      //   settings: {
+      //     slidesToShow: 2,
+      //     slidesToScroll: 2,
+      //   },
+      // },
+      // {
+      //   breakpoint: 480,
+      //   settings: {
+      //     slidesToShow: 1,
+      //     slidesToScroll: 1,
+      //   },
+      // },
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
+    ],
   });
   $(".surf-map").slick({
     slidesToShow: 8,
     slidesToScroll: 1,
     asNavFor: ".surf-slider",
     focusOnSelect: true,
+    responsive: [
+      {
+        breakpoint: 1103,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          arrows: false,
+        },
+      },
+      // {
+      //   breakpoint: 600,
+      //   settings: {
+      //     slidesToShow: 2,
+      //     slidesToScroll: 2,
+      //   },
+      // },
+      // {
+      //   breakpoint: 480,
+      //   settings: {
+      //     slidesToShow: 1,
+      //     slidesToScroll: 1,
+      //   },
+      // },
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
+    ],
   });
 
   $(".travel__slider").slick({
@@ -115,5 +173,9 @@ $(function () {
 
   $(".surfboard-box__circle").on("click", function () {
     $(this).toggleClass("active");
+  });
+
+  $(".menu-btn").on("click", function () {
+    $(".menu").toggleClass("active");
   });
 });

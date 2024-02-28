@@ -102,7 +102,10 @@
   margin: 0 auto;
   .slick-track {
     max-height: 635px;
-    transform: none !important;
+    // transform: none !important;
+  }
+  .slick-list {
+    overflow: visible;
   }
   .slick-current {
     .slider-dots__content {
@@ -156,6 +159,7 @@
   height: 24px;
   background-color: $green;
   border-radius: 50%;
+  box-shadow: 0 0 35px 0 rgba(74, 246, 205, 0.84);
 }
 .slider-dots__content {
   display: none;
