@@ -180,6 +180,13 @@
       }
     }
   }
+  .travel-slider__descr {
+    padding-left: 20px;
+  }
+
+  .travel {
+    padding-top: 70px;
+  }
 }
 
 @media (min-width: 1103px) {
@@ -237,6 +244,37 @@
   }
 }
 
+@media (max-width: 1050px) {
+  .travel-slider__info {
+    display: block;
+  }
+  .travel-slider__item-subtitle {
+    position: static;
+    transform: rotate(0);
+    height: auto;
+    text-align: left;
+  }
+  .travel-slider__info-item {
+    min-height: auto;
+    margin-bottom: 20px;
+    padding-left: 20px;
+  }
+  .travel-slider__item-title {
+    padding-left: 0;
+  }
+  .travel-slider__descr {
+    background-position: right -119px;
+    background-size: contain;
+  }
+  .travel {
+    .title {
+      span {
+        padding-bottom: 0;
+      }
+    }
+  }
+}
+
 @media (max-width: 1040px) {
   .header__arrows {
     display: none;
@@ -287,11 +325,21 @@
     line-height: 18px;
     padding-left: 65px;
   }
+  .headline-right {
+    color: #fff;
+    font-size: 16px;
+    line-height: 18px;
+    padding-right: 65px;
+  }
   .slider-item__info-subtext {
     margin-bottom: 5px;
   }
 
   .headline-left::before {
+    width: 50px;
+    height: 1px;
+  }
+  .headline-right::before {
     width: 50px;
     height: 1px;
   }
@@ -354,6 +402,14 @@
   .surf {
     padding: 70px 0 50px;
   }
+
+  .travel-slider__head {
+    min-height: 720px;
+  }
+  .travel-slider__subtitle {
+    padding-top: 100px;
+    padding-right: 20px;
+  }
 }
 @media (max-width: 520px) {
   .headline-left {
@@ -362,7 +418,17 @@
   .subtitle__head {
     font-size: 32 px;
   }
+  .travel-slider__descr {
+    background-position: right -90px;
+  }
 }
+
+@media (max-width: 640px) {
+  .btn {
+    font-size: 30px;
+  }
+}
+
 @media (max-width: 460px) {
   .header__aside {
     display: block;
@@ -388,6 +454,35 @@
   }
   .header__title {
     display: none;
+  }
+  .travel {
+    background-size: 120px;
+    padding-bottom: 40px;
+  }
+  .travel-slider__descr {
+    min-height: 255px;
+    margin-top: -290px;
+    margin-bottom: 30px;
+    img {
+      padding-left: 10px;
+    }
+  }
+  .subtitle__head {
+    font-size: 32px;
+  }
+  .descr__head {
+    font-size: 32px;
+  }
+  .title span {
+    font-size: 85px;
+  }
+  .travel-slider__descr {
+    background-position: right -30px;
+  }
+  .surf-slider {
+    .slick-list {
+      max-height: 650px;
+    }
   }
 }
 
