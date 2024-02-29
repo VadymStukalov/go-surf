@@ -1723,6 +1723,9 @@ input[type=number] {
   .dots-box__name {
     line-height: 18px;
   }
+  .surf__subtitle {
+    padding-right: 20px;
+  }
 }
 @media (max-width: 750px) {
   .slider-dotshead.slick-slider {
@@ -1730,6 +1733,30 @@ input[type=number] {
   }
   .slider-dotshead {
     display: none;
+  }
+}
+@media (max-width: 720px) {
+  .title span {
+    font-size: 100px;
+    padding-bottom: 80px;
+    padding-left: 10px;
+  }
+  .surf-slider {
+    padding-top: 50px;
+  }
+  .surf-slider .slider-arrows {
+    top: 5px;
+  }
+  .surf {
+    padding: 70px 0 50px;
+  }
+}
+@media (max-width: 520px) {
+  .headline-left {
+    letter-spacing: 2.333px;
+  }
+  .subtitle__head {
+    font-size: 32 px;
   }
 }
 @media (max-width: 460px) {
@@ -1757,6 +1784,22 @@ input[type=number] {
   }
   .header__title {
     display: none;
+  }
+}
+@media (max-width: 425px) {
+  .surf-map .slick-current .slider-dots__content,
+  .surf-map .slider-dots__content {
+    display: block;
+    width: 250px;
+    padding: 28px 15px;
+  }
+}
+@media (max-width: 374px) {
+  .surf-map .slick-current .slider-dots__content,
+  .surf-map .slider-dots__content {
+    display: block;
+    width: 200px;
+    padding: 28px 15px;
   }
 }
 .menu-btn {
