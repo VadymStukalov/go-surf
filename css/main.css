@@ -863,6 +863,7 @@ li {
   position: relative;
   bottom: 265px;
   transform: translateX(-50%);
+  z-index: 1;
 }
 .slider-dots__content::before {
   content: "";
@@ -1810,6 +1811,9 @@ input[type=number] {
   }
   .travel-slider__item-title span {
     align-self: flex-start;
+  }
+  .sleep {
+    padding: 70px 0 50px;
   }
 }
 @media (max-width: 900px) {
